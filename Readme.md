@@ -40,7 +40,7 @@ Follow these steps to set up and run the project locally.
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/healthbot-sih.git](https://github.com/your-username/healthbot-sih.git)
+    git clone [https://github.com/your-username/healthbot-sih.git](https://github.com/rajsushant898-spec/sih_chatbot_wesbite)
     cd healthbot-sih
     ```
 

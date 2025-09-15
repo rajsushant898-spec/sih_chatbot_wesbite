@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthBot Chatbot</title>
+    <title>HealthBot - Your AI Health Assistant</title>
     <link rel="stylesheet" href="assets/css/chatbot.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://unpkg.com/papaparse@5.3.2/papaparse.min.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo">HealthBot 🩺</a>
+                <a href="/" class="logo">HealthBot 🩺</a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="chatbot.html">Chatbot</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/chatbot">Chatbot</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="chatbot-container">
+        <div class="chatbot-container">
             <div class="chat-window" id="chat-window">
-                <div class="message bot">Hello! I'm your personal health assistant. How can I help you today?</div>
+                <div id="typing-indicator" class="message bot typing-indicator" style="display: none;">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <div class="chat-input-area">
-                <select id="language-select">
+                <select id="language-select" title="Select Language">
                     <option value="en">English</option>
-                    <option value="hi">हिन्दी (Hindi)</option>
-                    </select>
+                    <option value="hi">हिन्दी</option>
+                </select>
                 <input type="text" id="user-input" placeholder="Type your message..." autofocus>
-                <button id="send-btn">Send</button>
+                <button id="send-btn" title="Send">Send</button>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -44,6 +46,9 @@
             <p>&copy; 2024 HealthBot. A Smart India Hackathon Project.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
     <script src="assets/js/chatbot.js"></script>
 </body>
 </html>

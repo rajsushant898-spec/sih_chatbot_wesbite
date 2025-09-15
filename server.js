@@ -13,8 +13,8 @@ const knowledgeBase = require('./knowledge_base.json');
 
 // Initialize the Express application
 const app = express();
-const PORT = 3000; // Use environment variable for port or default to 3000
-const API_KEY = 'AIzaSyBtdEmUPAvrWp8CYDCF7beKGRZ0gN4VFVA'; // Get the API key from environment variables
+const PORT = 3000; 
+const API_KEY = 'AIzaSyBtdEmUPAvrWp8CYDCF7beKGRZ0gN4VFVA'; 
 
 // --- Middleware Setup ---
 // Serve static files from the root directory. This makes all HTML, CSS, and JS files accessible.

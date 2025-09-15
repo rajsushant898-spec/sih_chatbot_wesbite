@@ -5,8 +5,8 @@ const axios = require('axios');
 const path = require('path'); // Import the 'path' module
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const API_KEY = process.env.GEMINI_API_KEY;
+const PORT = 3000;
+const API_KEY = 'AIzaSyBtdEmUPAvrWp8CYDCF7beKGRZ0gN4VFVA';
 
 // Middleware to serve static files from the root and assets directory
 app.use(express.static(path.join(__dirname, '')));

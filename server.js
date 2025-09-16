@@ -18,7 +18,7 @@ const API_KEY = 'AIzaSyBtdEmUPAvrWp8CYDCF7beKGRZ0gN4VFVA';
 
 // --- Middleware Setup ---
 // Serve static files from the root directory. This makes all HTML, CSS, and JS files accessible.
-app.use(express.static(path.join(__dirname, '')));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 // Enable parsing of JSON body in POST requests
 app.use(express.json());

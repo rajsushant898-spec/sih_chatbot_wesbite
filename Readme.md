@@ -52,7 +52,7 @@ Follow these steps to set up and run the project locally.
 3.  Set up your environment variable. Create a file named `.env` in the project's root directory and add your Gemini API key:
     ```bash
     GEMINI_API_KEY="AIzaSyBtdEmUPAvrWp8CYDCF7beKGRZ0gN4VFVA"
-    ```
+    ```ß
 
 ### Running the Application
 
